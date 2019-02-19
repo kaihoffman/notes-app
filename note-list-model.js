@@ -7,11 +7,10 @@
         return this._notes;
     };
 
-    NoteList.prototype.addNote = function (note) {
-        this._notes.push(note);
+    NoteList.prototype.addNote = function(note) {
+        return this._notes.push(note);
     };
 
-    exports.noteList = new NoteList()
-    console.log("note list working")
+    exports.noteList = NoteList
 
 })(this);

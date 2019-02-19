@@ -1,14 +1,11 @@
 var noteBody = "hello buddy";
 
 (function (exports) {
-    function Note(noteBody){
-        this._noteText = noteBody;
+    function note(string){
+        this._noteText = string;
     }
-
-    Note.prototype.showNoteText = function () {
+    note.prototype.showNote = function () {
         return this._noteText;
     };
-    exports.note = new Note(noteBody)
-    console.log("working")
-
+    exports.note = note
 })(this);
