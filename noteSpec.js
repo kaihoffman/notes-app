@@ -19,7 +19,7 @@ function testAddNoteToNoteList() {
 testAddNoteToNoteList();
 
 function testPrintNotes() {
-    noteList.addNote(Note);
+    noteList.addNote(testnote);
     console.log("testPrintNotes: " + assert.isTrue(notelistview.printNotes(noteList) === ("<div><li>" + testnote.showNote() + "</li></div>")))
 };
 testPrintNotes();
