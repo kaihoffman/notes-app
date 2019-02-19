@@ -1,11 +1,11 @@
 var noteBody = "hello buddy";
 
 (function (exports) {
-    function note(string){
+    function Note(string){
         this._noteText = string;
     }
-    note.prototype.showNote = function () {
+    Note.prototype.showNote = function () {
         return this._noteText;
     };
-    exports.note = note
+    exports.Note = Note
 })(this);

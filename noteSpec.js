@@ -1,5 +1,6 @@
-testnote = new note("hello, buddy");
+testnote = new Note("hello, buddy");
 noteList = new noteList();
+notelistview = new NoteListView();
 
 function testCreateNote() {
     console.log("testCreateNote: " + assert.isTrue(testnote.showNote() === "hello, buddy"))
@@ -18,7 +19,7 @@ function testAddNoteToNoteList() {
 testAddNoteToNoteList();
 
 function testPrintNotes() {
-    noteList.addNote(note);
-    console.log("testPrintNotes: " + assert.isTrue(noteListView.printNotes(noteList) === ("<div><li>" + testnote.showNote() + "</li></div>")))
+    noteList.addNote(Note);
+    console.log("testPrintNotes: " + assert.isTrue(notelistview.printNotes(noteList) === ("<div><li>" + testnote.showNote() + "</li></div>")))
 };
 testPrintNotes();

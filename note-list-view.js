@@ -9,7 +9,5 @@
         }
     };
 
-    exports.noteListView = new NoteListView()
-    console.log("notelist View list working")
-
+    exports.NoteListView = NoteListView
 })(this);
