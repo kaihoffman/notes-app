@@ -1,5 +1,3 @@
-var noteBody = "hello buddy";
-
 (function (exports) {
     function Note(string){
         this._noteText = string;
